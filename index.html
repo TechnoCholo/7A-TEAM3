@@ -1,94 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyect Team 3</title>
-    <style>
-        nav {
-            background-color: #808080;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            border: 4px solid green;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        #video{
-             display: flex;
-            justify-content: center; /* Centrar horizontalmente */
-         align-items: center;    /* Centrar verticalmente */
-    
-        }
-        
-    </style>
+  <title>Skeletal System</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #eeeeF8;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #3f3f3f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 25px;
+      border-bottom: 2px solid #333;
+      background-color: #eeeeF8;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3f3f3f;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0057b8;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 70px 90px;
+      border-bottom: 1px solid #999;
+    }
+
+    .top-line {
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+      margin-bottom: 80px;
+    }
+
+    .blue-dot {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background-color: #0057b8;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    h1 {
+      font-size: 90px;
+      line-height: 0.95;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 60px;
+      margin: 0 0 50px 0;
+      font-weight: 800;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: normal;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .homepage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .image-box img {
+      width: 420px;
+      height: 300px;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    .two-column {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .content-box {
+      width: 50%;
+    }
+
+    .vocab {
+      margin-top: 20px;
+      padding: 15px;
+      border-left: 6px solid #0057b8;
+      background-color: white;
+    }
+
+    .facts {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Final Project</h1>
-        <p>What About AI?</p>
-    </header>
 
-    <nav>
-        <a href="AI for Radiology.png">David</a>
-        <a href="All Systems Red.png">Yareth</a>
-        <a href="Documento Póster científico Simple Azul.png">Giselle</a>
-        <a href="Final Project The Master Algorithm.png">Fabián</a>
-    </nav>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#types">Types of Bones</a>
+    <a href="#functions">Functions</a>
+    <a href="#major">Major Bones</a>
+    <a href="#diseases">Diseases</a>
+    <a href="#facts">Fun Facts</a>
+  </nav>
 
-    <section id="home">
-        <h2>About our Project</h2>
-        <p>In this project, we created this webpage using the HTML and CSS knowledge our amazing New Technology Teacher gave us. Armed now with this newfound knowledge, we created this place to talk about Artificial Intelligence and its problems. </p>
-    </section>
+  <section id="home">
+    <div class="top-line"></div>
+
+    <div class="homepage">
+      <div>
+        <h1>The Skeletal System<span class="blue-dot"></span></h1>
     
-    <section id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eXdVDhOGqoE?si=izkTH6nk1WhGZeI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    
-        <section>
-        <h2>AI and Literature </h2>
-        <p>In this project, we also talk about some books that have tought about AI this include "AI for Radiology" by Oge Marques, "All systems Red" by Susan Wells, "Klara and the Sun" by Kazuo Ishiguro and "The master Algorithm by Pedro Domingo</p>
-    </section>
+        <h3>Team 3 7ºA : Sandra Ruiz, Eder Hernandez,
+        Iker Gamez, Rodrigo Gzz</h3>
+        <p>
+          Bones are important because they support our body, protect our organs,
+          and help us move. They also store minerals like calcium and produce
+          blood cells inside the bone marrow.
+        </p>
+      </div>
+
+      <div class="image-box">
+        <img src="skeletal-system.jpg" alt="Skeletal system">
+      </div>
+    </div>
+  </section>
+
+  <section id="types">
+    <div class="top-line"></div>
+
+    <div class="two-column">
+      <div class="image-box">
+        <img src="types-of-bones.jpg" alt="Types of bones">
+      </div>
+
+      <div class="content-box">
+        <h2>Types of Bones<span class="blue-dot"></span></h2>
+        <p>
+          The human body has different types of bones. Long bones help with
+          movement, short bones give support, flat bones protect organs, and
+          irregular bones have special shapes.
+        </p>
+
+       
+          
+      
+
+        <p class="facts">Example: The femur is a long bone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="functions">
+    <div class="top-line"></div>
+
+    <h2>Functions of Bones<span class="blue-dot"></span></h2>
+
+    <p>
+      Bones have many important functions. They support the body, protect organs,
+      help movement, store minerals, and produce blood cells.
+    </p>
+
+    <div class="vocab">
+      <b>Vocabulary:</b> support, protection, movement, minerals, bone marrow
+    </div>
+
+    <p class="facts">Example: The ribs protect the heart and lungs.</p>
+  </section>
+
+  <section id="major">
+    <div class="top-line"></div>
+
+    <div class="two-column">
+      <div class="content-box">
+        <h2>Major Bones<span class="blue-dot"></span></h2>
+        <p>
+          Some major bones in the human body are the skull, spine, ribs, pelvis,
+          femur, tibia, humerus, radius, and ulna.
+        </p>
+
+        <div class="vocab">
+          <b>Vocabulary:</b> skull, spine, ribs, pelvis, femur, tibia, humerus
+        </div>
+
+        <p class="facts">Fact: The femur is the longest bone in the body.</p>
+      </div>
+
+      <div class="image-box">
+        <img src="major-bones.jpg" alt="Major bones">
+      </div>
+    </div>
+  </section>
+
+  <section id="diseases">
+    <div class="top-line"></div>
+
+    <h2>Diseases and Injuries<span class="blue-dot"></span></h2>
+
+    <p>
+      Bones can be affected by diseases and injuries. A fracture is a broken bone.
+      Osteoporosis is a disease that makes bones weak and easier to break.
+    </p>
+
+    <div class="vocab">
+      <b>Vocabulary:</b> fracture, osteoporosis, injury, calcium, healing
+    </div>
+
+    <p class="facts">Example: A cast can help a broken bone heal.</p>
+  </section>
+
+  <section id="facts">
+    <div class="top-line"></div>
+
+    <h2>Fun Facts About Bones<span class="blue-dot"></span></h2>
+
+    <p>
+      Bones are living parts of the body. They grow, repair themselves, and help
+      the body stay healthy.
+    </p>
+
+    <div class="vocab">
+      <b>Vocabulary:</b> skeleton, joints, cartilage, bone marrow
+    </div>
+
+    <p class="facts">Fact: Adults have 206 bones.</p>
+  </section>
+
 </body>
 </html>
